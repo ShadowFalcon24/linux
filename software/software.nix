@@ -46,6 +46,7 @@
 
     # This is required to be a linux user
     fastfetch
+    btop
   ];
 
   # Install partition manager
