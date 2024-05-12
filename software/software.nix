@@ -49,6 +49,21 @@
     btop
   ];
 
+  # Change some chromium settings
+  programs.chromium = {
+    enable = true;
+    enablePlasmaBrowserIntegration = true;
+    extensions = [
+      "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
+    ];
+    extraOpts = {
+      "SyncDisabled" = true;
+      "PasswordManagerEnabled" = false;
+      "BuiltInDnsClientEnabled" = false;
+      "CloudPrintSubmitEnabled" = false;
+    };
+  };
+
   # Install partition manager
   programs.partition-manager.enable = true;
 }
