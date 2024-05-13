@@ -54,7 +54,10 @@
     enable = true;
     enablePlasmaBrowserIntegration = true;
     extensions = [
+      "cimiefiiaegbelhefglklhhakcgmhkai" # Plasma Browser Integration
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
+      "nngceckbapebfimnlniiiahkandclblb" # Bitwarden PasswordManager
+      "aghfnjkcakhmadgdomlmlhhaocbkloab" # Just Dark Theme
     ];
     extraOpts = {
       "SyncDisabled" = true;
