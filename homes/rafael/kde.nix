@@ -24,5 +24,12 @@ in {
       iconTheme = "Papirus-Dark";
       wallpaper = spacecraft-wallpaper;
     };
+
+    configFile = {
+      kscreenlockerrc = {
+        Greeter.WallpaperPlugin = "org.kde.image";
+        "Greeter/Wallpaper/org.kde.image/General".Image = spacecraft-wallpaper;
+      };
+    };
   };
 }
