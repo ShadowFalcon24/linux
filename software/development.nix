@@ -16,8 +16,11 @@ in {
     environment.systemPackages = with pkgs; [
       # Editors
       neovim
-      jetbrains-toolbox
       vscode
+
+      # Jetbrains IDEs
+      jetbrains.idea-ultimate
+      jetbrains.rust-rover
 
       # Git
       git
