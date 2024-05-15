@@ -32,6 +32,9 @@ in {
       # Java
       temurin-bin
       gradle
+
+      # Minecraft
+      packwiz
     ];
   };
 }
