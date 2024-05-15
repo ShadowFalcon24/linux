@@ -8,9 +8,9 @@
   #boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Change kernel to the CachyOS kernel
-  # Switch to new scheduler: sudo scx_rusty
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
-  environment.systemPackages = [pkgs.scx];
+  chaotic.scx.enable = true; # by default uses scx_rustland scheduler
+  # chaotic.scx.scheduler = "scx_rusty";
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
