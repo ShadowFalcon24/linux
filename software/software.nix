@@ -69,4 +69,7 @@
 
   # Install partition manager
   programs.partition-manager.enable = true;
+
+  # Run unpatched dynamic binaries
+  programs.nix-ld.enable = true;
 }
