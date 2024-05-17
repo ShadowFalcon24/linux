@@ -9,6 +9,7 @@
     ./gaming.nix
     ./development.nix
     ./vpn.nix
+    ./virtualization/virtualization.nix
   ];
 
   # List packages installed in system profile. To search, run:

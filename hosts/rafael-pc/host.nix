@@ -15,6 +15,9 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  # Enable the OpenSSH daemon.
+  services.openssh.enable = true;
+
   networking.hostName = "rafael-pc"; # Define your hostname.
 
   # Enable NTFS support
@@ -25,6 +28,11 @@
     device = "/dev/disk/by-uuid/e1540e91-621f-4c63-b575-3646be321078";
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=games"];
+  };
+  fileSystems."/mnt/ssd/virtualization" = {
+    device = "/dev/disk/by-uuid/e1540e91-621f-4c63-b575-3646be321078";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=virtualization"];
   };
 
   # HDD
@@ -49,5 +57,10 @@
     device = "/dev/disk/by-uuid/9e4a24de-8d5c-47cc-a5e2-e1774145ce7e";
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=other"];
+  };
+  fileSystems."/mnt/extra/images" = {
+    device = "/dev/disk/by-uuid/9e4a24de-8d5c-47cc-a5e2-e1774145ce7e";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=images"];
   };
 }

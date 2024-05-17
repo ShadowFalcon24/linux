@@ -9,6 +9,7 @@ in {
   imports = [
     ./rafael/nushell.nix # Enable nushell
     ./rafael/kde.nix # Only enable this if we are using KDE
+    ./rafael/virtualization.nix # Only enable if we have virtualization with virt-manager enabled
   ];
 
   # Home Manager needs a bit of information about you and the paths it should

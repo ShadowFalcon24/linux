@@ -26,6 +26,15 @@
   software.gaming.enable = true; # Enable steam und lutris
   software.vpn.enable = true; # Enable mullvad and other tools
 
+  # Please check if ("amd_iommu=on" or "intel_iommu=on") and "iommu=pt" is set
+  # Please change the GPU ids in the virtualization module!
+  software.virtualization.enable = true; # Enable qemu and virt-manager
+  software.virtualization.cpuType = "amd";
+  software.virtualization.hostName = "rafael-pc";
+
+  # Name of the VM that should use GPU-Passthrough
+  software.virtualization.guestName = "win10-passthrough";
+
   # Set username
   main-user.userName = "rafael";
   main-user.userDescription = "Rafael";
