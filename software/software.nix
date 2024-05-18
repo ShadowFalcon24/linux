@@ -21,6 +21,7 @@
 
     # Editors
     kate
+    obsidian
 
     # Media editors/players
     mpv # Best media player on linux
