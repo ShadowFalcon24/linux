@@ -20,6 +20,9 @@
 
   networking.hostName = "rafael-pc"; # Define your hostname.
 
+  # Set docker storageDriver to btrfs
+  virtualisation.docker.storageDriver = "btrfs";
+
   # Enable NTFS support
   boot.supportedFilesystems = ["ntfs"];
 

@@ -75,6 +75,9 @@ in {
     # Enable IOMMU
     boot.kernelParams = ["${cfg.cpuType}_iommu=on" "iommu=pt"];
 
+    # Enable docker
+    virtualisation.docker.enable = true;
+
     # Enable libvirtd
     virtualisation.libvirtd = {
       enable = true;
