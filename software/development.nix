@@ -35,6 +35,9 @@ in {
 
       # Minecraft
       packwiz
+
+      # Automation
+      ansible
     ];
   };
 }
