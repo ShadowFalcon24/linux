@@ -11,8 +11,6 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
-    # List packages installed in system profile. To search, run:
-    # $ nix search neovim
     environment.systemPackages = with pkgs; [
       # Editors
       neovim
@@ -25,19 +23,6 @@ in {
       # Git
       git
       gh
-
-      # Rust
-      rustup
-
-      # Java
-      temurin-bin
-      gradle
-
-      # Minecraft
-      packwiz
-
-      # Automation
-      ansible
     ];
   };
 }

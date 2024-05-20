@@ -21,6 +21,7 @@ in {
       lutris
 
       # Minecraft
+      temurin-bin
       prismlauncher
 
       # Overrides for Lutris
