@@ -40,7 +40,7 @@ in {
     # services.xserver.libinput.enable = true;
 
     environment.systemPackages = with pkgs; [
-      #    sddm-kcm # KDE sddm module
+      kdePackages.kcalc # Calculator
     ];
   };
 }
