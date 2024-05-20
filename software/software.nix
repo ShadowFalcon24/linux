@@ -38,7 +38,7 @@
     spotify
 
     # Webbrowser
-    chromium
+    google-chrome
 
     # Libreoffice with spell checking for english and german
     libreoffice-qt
