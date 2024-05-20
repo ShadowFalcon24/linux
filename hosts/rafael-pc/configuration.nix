@@ -22,7 +22,6 @@
   displayManager.sddm.enable = true;
 
   # Software
-  software.development.enable = true; # Enable jetbrains etc
   software.gaming.enable = true; # Enable steam und lutris
   software.vpn.enable = true; # Enable mullvad and other tools
 

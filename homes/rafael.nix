@@ -8,12 +8,11 @@
 in {
   imports = [
     ./rafael/nushell.nix # Enable nushell
+    ./rafael/git.nix # Change my git settings
     ./rafael/kde.nix # Only enable this if we are using KDE
     ./rafael/virtualization.nix # Only enable if we have virtualization with virt-manager enabled
   ];
 
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = userName;
   home.homeDirectory = "/home/${userName}";
 

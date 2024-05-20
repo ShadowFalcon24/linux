@@ -7,7 +7,6 @@
   imports = [
     ./sound.nix
     ./gaming.nix
-    ./development.nix
     ./vpn.nix
     ./virtualization/virtualization.nix
   ];
@@ -22,6 +21,7 @@
     # Editors
     kate
     obsidian
+    vscode
 
     # Media editors/players
     mpv # Best media player on linux

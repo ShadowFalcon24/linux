@@ -8,7 +8,7 @@ pushd /etc/nixos/
 target=$(<target.txt)
 
 # Run Alejandra quietly
-alejandra . &>/dev/null
+alejandra .
 
 # Show changes in *.nix files with zero context lines
 git diff -U0 *.nix
