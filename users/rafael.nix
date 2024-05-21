@@ -11,11 +11,14 @@ in {
     ../home/git.nix
     ../home/kde.nix
     ../home/virtualization.nix
-    ../home/sunshine.nix
   ];
 
   home.username = userName;
   home.homeDirectory = "/home/${userName}";
+
+  home.packages = with pkgs; [
+    moonlight-qt # Install moonlight client
+  ];
 
   software.home = {
     # Git module
@@ -23,12 +26,6 @@ in {
       enable = true;
       userName = "HttpRafa";
       userEmail = "60099368+HttpRafa@users.noreply.github.com";
-    };
-    # Sunshine
-    # Sunshine is a Game stream host for Moonlight
-    sunshine = {
-      server.enable = true;
-      client.enable = true;
     };
     # KDE module
     # Only enable this if we are using KDE

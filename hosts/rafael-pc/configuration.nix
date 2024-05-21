@@ -23,6 +23,7 @@
 
   # Software
   software.gaming.enable = true; # Enable steam und lutris
+  software.gaming.sunshine.enable = true; # Gives sunshine permissions to capture your screen
   software.vpn.enable = true; # Enable mullvad and other tools
 
   # Please check if ("amd_iommu=on" or "intel_iommu=on") and "iommu=pt" is set
