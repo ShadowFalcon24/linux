@@ -9,7 +9,8 @@ target=$(<target.txt)
 echo "Switching to this configuration..."
 sudo nixos-rebuild boot --flake /etc/nixos#$target
 sudo nix-collect-garbage -d
-echo "Please reboot the system to activate the new configuration"
+echo "Stopping system in 1 minute to activate the new configuration"
+sudo shutdown -h +1
 
 # Return to the previous directory
 popd

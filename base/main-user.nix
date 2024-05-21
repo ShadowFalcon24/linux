@@ -10,15 +10,11 @@ in {
   options.main-user = {
     userName = lib.mkOption {
       default = "mainuser";
-      description = ''
-        username
-      '';
+      description = "Username";
     };
     userDescription = lib.mkOption {
       default = "Main User";
-      description = ''
-        description
-      '';
+      description = "Description of the user";
     };
   };
 
@@ -35,7 +31,7 @@ in {
     home-manager = {
       extraSpecialArgs = {inherit inputs;};
       users = {
-        "${cfg.userName}" = import ../homes/${cfg.userName}.nix;
+        "${cfg.userName}" = import ../users/${cfg.userName}.nix;
       };
     };
   };
