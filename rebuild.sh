@@ -4,6 +4,9 @@ set -e
 # Change directory to /etc/nixos/
 pushd /etc/nixos/
 
+# Read what we want to do
+operation=${1:-switch}
+
 # Read current target configuration
 target=$(<target.txt)
 
@@ -37,7 +40,7 @@ done
 echo "NixOS Rebuilding..."
 
 # Perform NixOS switch, logging any errors
-sudo nixos-rebuild switch --flake /etc/nixos#$target
+sudo nixos-rebuild $operation --flake /etc/nixos#$target
 
 # Obtain the current generation
 gen=$(nixos-rebuild list-generations | grep current | awk '{print "Generation", $1, "\nDate:", $3, $4, "\nSystem:", $5, "\nKernel:", $6}')
