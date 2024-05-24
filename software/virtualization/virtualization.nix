@@ -87,7 +87,7 @@ in {
         swtpm.enable = true;
         ovmf = {
           enable = true; # Enable OVMF for UEFI
-          packages = [pkgs.OVMFFull]; # Enable secureBoot for Windows 11
+          packages = [pkgs.OVMFFull.fd]; # Enable secureBoot for Windows 11
         };
       };
       onBoot = "ignore";
@@ -116,6 +116,17 @@ in {
         ln -sf ${./start.sh} /var/lib/libvirt/hooks/qemu.d/${cfg.guestName}/prepare/begin/start.sh
         ln -sf ${./revert.sh} /var/lib/libvirt/hooks/qemu.d/${cfg.guestName}/release/end/revert.sh
       '';
+    };
+
+    # Move OVMF files to etc folder
+    environment.etc = {
+      "ovmf/edk2-x86_64-secure-code.fd" = {
+        source = config.virtualisation.libvirtd.qemu.package + "/share/qemu/edk2-x86_64-secure-code.fd";
+      };
+
+      "ovmf/edk2-i386-vars.fd" = {
+        source = config.virtualisation.libvirtd.qemu.package + "/share/qemu/edk2-i386-vars.fd";
+      };
     };
 
     # Install virt-manager
