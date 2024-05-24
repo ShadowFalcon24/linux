@@ -41,6 +41,7 @@ in {
 
     environment.systemPackages = with pkgs; [
       kdePackages.kcalc # Calculator
+      vulkan-tools
     ];
   };
 }

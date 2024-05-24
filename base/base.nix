@@ -8,6 +8,7 @@
     ./main-user.nix
     ./extra-locale.nix
     ./boot.nix
+    ./graphics.nix
   ];
 
   # Enable networking

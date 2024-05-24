@@ -48,9 +48,9 @@ if grep -q "true" "/tmp/vfio-is-nvidia" ; then
     echo "$DATE NVIDIA GPU Drivers Loaded"
 fi
 
-if  grep -q "true" "/tmp/vfio-is-amd" ; then
+if grep -q "true" "/tmp/vfio-is-amd" ; then
 
-    ## Load NVIDIA drivers ##
+    ## Load AMD drivers ##
     echo "$DATE Loading AMD GPU Drivers"
     
     modprobe drm
@@ -59,6 +59,18 @@ if  grep -q "true" "/tmp/vfio-is-amd" ; then
     modprobe drm_kms_helper
     
     echo "$DATE AMD GPU Drivers Loaded"
+fi
+
+if grep -q "true" "/tmp/vfio-is-nouveau" ; then
+
+    ## Load Nouveau drivers ##
+    echo "$DATE Loading Nouveau GPU Drivers"
+    
+    modprobe drm
+    modprobe drm_kms_helper
+    modprobe nouveau
+
+    echo "$DATE Nouveau GPU Drivers Loaded"
 fi
 
 ## Restart Display Manager ##

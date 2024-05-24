@@ -79,9 +79,10 @@ fi
 ## Unbind EFI-Framebuffer ##
 if test -e "/tmp/vfio-is-nvidia"; then
     rm -f /tmp/vfio-is-nvidia
-    else
-        test -e "/tmp/vfio-is-amd"
-        rm -f /tmp/vfio-is-amd
+elif test -e "/tmp/vfio-is-nouveau"; then
+    rm -f /tmp/vfio-is-nouveau
+elif test -e "/tmp/vfio-is-amd"; then
+    rm -f /tmp/vfio-is-amd
 fi
 
 sleep "1"
@@ -106,20 +107,33 @@ done
 sleep "1"
 
 if lspci -nn | grep -e VGA | grep -s NVIDIA ; then
-    echo "$DATE System has an NVIDIA GPU"
-    grep -qsF "true" "/tmp/vfio-is-nvidia" || echo "true" >/tmp/vfio-is-nvidia
-    echo efi-framebuffer.0 > /sys/bus/platform/drivers/efi-framebuffer/unbind
+    if lsmod | grep -s nouveau ; then
+        echo "$DATE System is using Nouveau driver"
+        grep -qsF "true" "/tmp/vfio-is-nouveau" || echo "true" >/tmp/vfio-is-nouveau
+        echo efi-framebuffer.0 > /sys/bus/platform/drivers/efi-framebuffer/unbind
 
-    ## Unload NVIDIA GPU drivers ##
-    modprobe -r nvidia_uvm
-    modprobe -r nvidia_drm
-    modprobe -r nvidia_modeset
-    modprobe -r nvidia
-    modprobe -r i2c_nvidia_gpu
-    modprobe -r drm_kms_helper
-    modprobe -r drm
+        ## Unload Nouveau driver ##
+        modprobe -r nouveau
+        modprobe -r drm_kms_helper
+        modprobe -r drm
 
-    echo "$DATE NVIDIA GPU Drivers Unloaded"
+        echo "$DATE Nouveau driver unloaded"
+    else
+        echo "$DATE System has an NVIDIA GPU but not using Nouveau"
+        grep -qsF "true" "/tmp/vfio-is-nvidia" || echo "true" >/tmp/vfio-is-nvidia
+        echo efi-framebuffer.0 > /sys/bus/platform/drivers/efi-framebuffer/unbind
+
+        ## Unload NVIDIA GPU drivers ##
+        modprobe -r nvidia_uvm
+        modprobe -r nvidia_drm
+        modprobe -r nvidia_modeset
+        modprobe -r nvidia
+        modprobe -r i2c_nvidia_gpu
+        modprobe -r drm_kms_helper
+        modprobe -r drm
+
+        echo "$DATE NVIDIA GPU Drivers Unloaded"
+    fi
 fi
 
 if lspci -nn | grep -e VGA | grep -s AMD ; then

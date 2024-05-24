@@ -4,10 +4,6 @@
   pkgs,
   ...
 }: {
-  imports = [
-    ../../base/nvidia.nix # Install nvidia drivers
-  ];
-
   # Networking
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -19,6 +15,9 @@
   services.openssh.enable = true;
 
   networking.hostName = "rafael-pc"; # Define your hostname.
+
+  # Install nvidia drivers
+  graphics.driver.enableNvidia = false;
 
   # Set docker storageDriver to btrfs
   virtualisation.docker.storageDriver = "btrfs";
