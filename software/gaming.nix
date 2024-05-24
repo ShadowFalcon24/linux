@@ -20,8 +20,10 @@ in {
           mangohud # Performance Overlay
 
           # Wine and bottles
-          protonup
-          bottles
+          # protonup
+          # wineWowPackages.stable
+          # winetricks
+          # bottles
 
           # Minecraft
           temurin-bin
@@ -29,13 +31,13 @@ in {
         ];
 
         # Install steam and other fancy things
-        programs.steam.enable = true;
+        # programs.steam.enable = true;
         programs.gamemode.enable = true;
 
         # Set protonup install folder
-        environment.sessionVariables = {
-          STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\\\${HOME}/.steam/root/compatibilitytools.d";
-        };
+        # environment.sessionVariables = {
+        #   STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\\\${HOME}/.steam/root/compatibilitytools.d";
+        # };
       }
     )
     (lib.mkIf cfg.sunshine.enable {
