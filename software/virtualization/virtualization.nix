@@ -1,3 +1,4 @@
+# TODO: Add support for sunshine in hooks
 {
   lib,
   config,
