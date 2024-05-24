@@ -19,23 +19,13 @@ in {
         environment.systemPackages = with pkgs; [
           mangohud # Performance Overlay
 
-          # Wine and Lutris
+          # Wine and bottles
           protonup
-          lutris
+          bottles
 
           # Minecraft
           temurin-bin
           prismlauncher
-
-          # Overrides for Lutris
-          (lutris.override {
-            extraLibraries = pkgs: [
-              # List library dependencies here
-            ];
-            extraPkgs = pkgs: [
-              # List package dependencies here
-            ];
-          })
         ];
 
         # Install steam and other fancy things

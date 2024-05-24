@@ -16,9 +16,6 @@
 
   networking.hostName = "rafael-pc"; # Define your hostname.
 
-  # Install nvidia drivers
-  graphics.driver.enableNvidia = false;
-
   # Set docker storageDriver to btrfs
   virtualisation.docker.storageDriver = "btrfs";
 

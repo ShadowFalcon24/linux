@@ -21,6 +21,9 @@
   desktop.kde.enable = true;
   displayManager.sddm.enable = true;
 
+  # Install nvidia drivers
+  graphics.driver.enableNvidia = true;
+
   # Software
   software.gaming.enable = true; # Enable steam und lutris
   # software.gaming.sunshine.enable = true; # Gives sunshine permissions to capture your screen
