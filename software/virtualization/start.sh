@@ -70,9 +70,6 @@ else
         while systemctl is-active --quiet "$DISPMGR.service"; do
             sleep "1"
         done
-
-        return
-
     fi
 fi
 
