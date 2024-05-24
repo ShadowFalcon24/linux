@@ -84,7 +84,11 @@ in {
       qemu = {
         runAsRoot = true;
         package = pkgs.qemu_kvm; # Only allows to emulate host architectures.
-        ovmf.enable = true; # Enable OVMF for UEFI
+        swtpm.enable = true;
+        ovmf = {
+          enable = true; # Enable OVMF for UEFI
+          packages = [pkgs.OVMFFull]; # Enable secureBoot for Windows 11
+        };
       };
       onBoot = "ignore";
       onShutdown = "shutdown";
