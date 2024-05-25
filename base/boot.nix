@@ -14,9 +14,10 @@
 
   # Bootloader.
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.systemd-boot = {
+  boot.loader.grub = {
     enable = true;
-    consoleMode = "max";
-    netbootxyz.enable = true;
+    devices = ["nodev"];
+    efiSupport = true;
+    useOSProber = true;
   };
 }

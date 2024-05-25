@@ -14,6 +14,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Set hardware clock
+  time.hardwareClockInLocalTime = true;
+
   # Enable flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
