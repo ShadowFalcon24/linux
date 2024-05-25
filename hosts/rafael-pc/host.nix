@@ -23,16 +23,18 @@
   boot.supportedFilesystems = ["ntfs"];
 
   # SSD
-  #fileSystems."/mnt/ssd/games" = {
-  #  device = "/dev/disk/by-uuid/e1540e91-621f-4c63-b575-3646be321078";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=games"];
-  #};
-  #fileSystems."/mnt/ssd/virtualization" = {
-  #  device = "/dev/disk/by-uuid/e1540e91-621f-4c63-b575-3646be321078";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=virtualization"];
-  #};
+  /*
+  fileSystems."/mnt/ssd/games" = {
+    device = "/dev/disk/by-uuid/e1540e91-621f-4c63-b575-3646be321078";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=games"];
+  };
+  fileSystems."/mnt/ssd/virtualization" = {
+    device = "/dev/disk/by-uuid/e1540e91-621f-4c63-b575-3646be321078";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=virtualization"];
+  };
+  */
 
   # HDD
   fileSystems."/mnt/hdd/development" = {
@@ -50,13 +52,13 @@
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=school"];
   };
+  fileSystems."/mnt/hdd/games" = {
+    device = "/dev/disk/by-uuid/8ded14ae-3f13-4112-bdff-bb4cd4bb9d1e";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=games"];
+  };
 
   # Extra HDD
-  fileSystems."/mnt/extra/other" = {
-    device = "/dev/disk/by-uuid/9e4a24de-8d5c-47cc-a5e2-e1774145ce7e";
-    fsType = "btrfs";
-    options = ["compress=zstd" "subvol=other"];
-  };
   fileSystems."/mnt/extra/images" = {
     device = "/dev/disk/by-uuid/9e4a24de-8d5c-47cc-a5e2-e1774145ce7e";
     fsType = "btrfs";
