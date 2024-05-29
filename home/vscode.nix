@@ -11,10 +11,11 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
+    nixpkgs.config.allowUnfree = true;
+
     # Install vscode
     programs.vscode = {
       enable = true;
-      package = pkgs.vscodium;
     };
   };
 }
