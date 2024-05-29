@@ -10,6 +10,7 @@ in {
     ../home/nushell.nix # Enable nushell
     ../home/git.nix
     ../home/kde.nix
+    ../home/vscode.nix
     ../home/virtualization.nix
   ];
 
@@ -34,6 +35,10 @@ in {
       background = "spacecraft.jpg";
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
+    };
+    # Install vscode for development
+    vscode = {
+      enable = true;
     };
     # Only enable if we have virtualization with virt-manager enabled
     virtualization.enable = true;

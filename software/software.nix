@@ -21,7 +21,6 @@
     # Editors
     kate
     obsidian
-    vscode
 
     # Media editors/players
     mpv # Best media player on linux
