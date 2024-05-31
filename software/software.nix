@@ -71,6 +71,9 @@
   # Install partition manager
   programs.partition-manager.enable = true;
 
+  # Install OpenRGB
+  services.hardware.openrgb.enable = true;
+
   # Run unpatched dynamic binaries
   programs.nix-ld.enable = true;
 }
