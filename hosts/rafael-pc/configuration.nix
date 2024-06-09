@@ -22,7 +22,7 @@
   displayManager.sddm.enable = true;
 
   # Install nvidia drivers
-  graphics.driver.enableNvidia = false;
+  graphics.driver.enableNvidia = true;
 
   # Software
   software.gaming.enable = true; # Enable steam und lutris
