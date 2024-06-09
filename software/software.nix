@@ -27,6 +27,9 @@
     ffmpeg # Video editor
     gimp # Picture editor
 
+    # 3D Printing
+    bambu-studio
+
     # Chat clients
     vesktop # Discord but better
 
