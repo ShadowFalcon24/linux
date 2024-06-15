@@ -30,6 +30,9 @@
     # 3D Printing
     bambu-studio
 
+    # API testing
+    postman
+
     # Chat clients
     vesktop # Discord but better
 
