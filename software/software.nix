@@ -35,6 +35,7 @@
 
     # Chat clients
     vesktop # Discord but better
+    element-desktop
 
     # E-Mail clients
     thunderbird
