@@ -7,11 +7,7 @@
   userName = "rafael";
 in {
   imports = [
-    ../home/nushell.nix # Enable nushell
-    ../home/git.nix
-    ../home/kde.nix
-    ../home/vscode.nix
-    ../home/virtualization.nix
+    ../home/home.nix
   ];
 
   home.username = userName;
@@ -28,10 +24,18 @@ in {
       userName = "HttpRafa";
       userEmail = "60099368+HttpRafa@users.noreply.github.com";
     };
+    # Hyprland module
+    # Only enable this if we are using Hyprland
+    hyprland = {
+      enable = true;
+      background = "spacecraft.jpg";
+      theme = "Monochrome";
+      iconTheme = "Papirus-Dark";
+    };
     # KDE module
     # Only enable this if we are using KDE
     kde = {
-      enable = true;
+      enable = false;
       background = "spacecraft.jpg";
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";

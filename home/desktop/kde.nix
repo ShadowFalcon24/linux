@@ -7,7 +7,7 @@
   cfg = config.software.home.kde;
 
   spacecraft-wallpaper = builtins.path {
-    path = ./wallpapers/${cfg.background};
+    path = ../wallpaper/${cfg.background};
   };
 in {
   options.software.home.kde = {
@@ -32,7 +32,7 @@ in {
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
       papirus-icon-theme # Install Papirus icon theme
-      (callPackage ../nixpkgs/pkgs/monochrome-kde-theme.nix {inherit pkgs;}) # Install Monochrome theme
+      (callPackage ../../nixpkgs/pkgs/monochrome-kde-theme.nix {inherit pkgs;}) # Install Monochrome theme
     ];
 
     programs.plasma = {
