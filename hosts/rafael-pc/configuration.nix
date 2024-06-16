@@ -18,8 +18,8 @@
   ];
 
   # Select desktop
-  desktop.kde.enable = false; # Disable KDE
-  desktop.hyprland.enable = true;
+  desktop.kde.enable = true;
+  desktop.hyprland.enable = false; # Disable hyprland
   displayManager.sddm.enable = true;
 
   # Install nvidia drivers
