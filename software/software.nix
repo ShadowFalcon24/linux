@@ -28,6 +28,7 @@
     gimp # Picture editor
 
     # 3D Printing
+    blender
     bambu-studio
 
     # API testing
