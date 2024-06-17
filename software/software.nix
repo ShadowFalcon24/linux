@@ -21,6 +21,7 @@
     # Editors
     kate
     obsidian
+    arduino-ide
 
     # Media editors/players
     mpv # Best media player on linux
