@@ -36,7 +36,7 @@
     postman
 
     # Chat clients
-    abaddon # Discord but better
+    armcord # Discord but better
     element-desktop
 
     # E-Mail clients
