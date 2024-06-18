@@ -36,7 +36,7 @@
     postman
 
     # Chat clients
-    vesktop # Discord but better
+    abaddon # Discord but better
     element-desktop
 
     # E-Mail clients
