@@ -5,7 +5,7 @@
   ...
 }: {
   # Enable sound with pipewire.
-  sound.enable = true;
+  # sound.enable = true; # Should not used with Pipewire
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
