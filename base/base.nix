@@ -24,10 +24,8 @@
   nixpkgs.config.allowUnfree = true;
 
   # Enable OpenGL
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
