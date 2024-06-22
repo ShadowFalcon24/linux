@@ -21,10 +21,12 @@ in {
 
           # Wine
           protonup
+          bottles
 
           # Minecraft
           temurin-bin
           prismlauncher
+          packwiz
         ];
 
         # Install steam and other fancy things
