@@ -55,6 +55,9 @@
     hunspellDicts.en_US
     hunspellDicts.de_DE
 
+    # Yubikey
+    yubioath-flutter
+
     # This is required to be a linux user
     fastfetch
     btop
@@ -83,6 +86,9 @@
 
   # Install OpenRGB
   services.hardware.openrgb.enable = true;
+
+  # Enable pcscd service
+  services.pcscd.enable = true;
 
   # Run unpatched dynamic binaries
   programs.nix-ld.enable = true;
