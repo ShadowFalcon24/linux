@@ -90,6 +90,9 @@
   # Enable pcscd service
   services.pcscd.enable = true;
 
+  # Enable flatpak
+  services.flatpak.enable = true;
+
   # Run unpatched dynamic binaries
   programs.nix-ld.enable = true;
 }

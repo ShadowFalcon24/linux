@@ -19,9 +19,8 @@ in {
         environment.systemPackages = with pkgs; [
           mangohud # Performance Overlay
 
-          # Wine and bottles
+          # Wine
           protonup
-          bottles
 
           # Minecraft
           temurin-bin
