@@ -30,7 +30,6 @@
 
     # 3D Printing
     blender
-    freecad
     bambu-studio
 
     # API testing
