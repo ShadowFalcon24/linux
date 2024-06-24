@@ -14,6 +14,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search <some package>
   environment.systemPackages = with pkgs; [
+    # Appimages
+    appimage-run
+
     # File sharing
     filezilla # WinSCP alternative
     localsend # AirDrop alternative
