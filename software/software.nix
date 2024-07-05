@@ -33,7 +33,7 @@
 
     # 3D Printing
     blender
-    bambu-studio
+    orca-slicer
 
     # API testing
     postman
