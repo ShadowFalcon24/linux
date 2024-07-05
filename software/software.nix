@@ -25,6 +25,7 @@
     kate
     obsidian
     arduino-ide
+    jetbrains.idea-ultimate
 
     # Media editors/players
     mpv # Best media player on linux
