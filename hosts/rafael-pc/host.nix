@@ -37,6 +37,7 @@
   */
 
   # HDD
+  /*
   fileSystems."/mnt/hdd/development" = {
     device = "/dev/disk/by-uuid/8ded14ae-3f13-4112-bdff-bb4cd4bb9d1e";
     fsType = "btrfs";
@@ -57,11 +58,14 @@
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=games"];
   };
+  */
 
   # Extra HDD
+  /*
   fileSystems."/mnt/extra/images" = {
     device = "/dev/disk/by-uuid/9e4a24de-8d5c-47cc-a5e2-e1774145ce7e";
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=images"];
   };
+  */
 }
