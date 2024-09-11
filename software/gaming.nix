@@ -30,6 +30,7 @@ in {
         ];
 
         # Install steam and other fancy things
+        programs.gamescope.enable = true;
         programs.steam.enable = true;
         programs.gamemode.enable = true;
 
