@@ -6,7 +6,7 @@
 }: let
   cfg = config.software.home.kde;
 
-  spacecraft-wallpaper = builtins.path {
+  desktop-wallpaper = builtins.path {
     path = ../wallpaper/${cfg.background};
   };
 in {
@@ -44,13 +44,19 @@ in {
         colorScheme = cfg.theme;
         lookAndFeel = cfg.theme;
         iconTheme = cfg.iconTheme;
-        wallpaper = spacecraft-wallpaper;
+        wallpaper = desktop-wallpaper;
+      };
+
+      kwin = {
+        effects = {
+          shakeCursor = false;
+        };
       };
 
       configFile = {
         kscreenlockerrc = {
           Greeter.WallpaperPlugin = "org.kde.image";
-          "Greeter/Wallpaper/org.kde.image/General".Image = spacecraft-wallpaper;
+          "Greeter/Wallpaper/org.kde.image/General".Image = desktop-wallpaper;
         };
       };
     };

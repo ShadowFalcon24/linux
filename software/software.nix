@@ -41,7 +41,7 @@
 
     # Chat clients
     armcord # Discord but better
-    element-desktop
+    # Matrix Client: element-desktop
 
     # E-Mail clients
     thunderbird
@@ -72,7 +72,7 @@
     enablePlasmaBrowserIntegration = true;
     extensions = [
       "cimiefiiaegbelhefglklhhakcgmhkai" # Plasma Browser Integration
-      "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
+      "ddkjiahejlhfcafbddmgiahcphecmpfh" # uBlock Origin Lite
       "nngceckbapebfimnlniiiahkandclblb" # Bitwarden PasswordManager
       "aghfnjkcakhmadgdomlmlhhaocbkloab" # Just Dark Theme
     ];
