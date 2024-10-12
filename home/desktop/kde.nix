@@ -6,7 +6,7 @@
 }: let
   cfg = config.software.home.kde;
 
-  desktop-wallpaper = builtins.path {
+  custom-wallpaper = builtins.path {
     path = ../wallpaper/${cfg.background};
   };
 in {
@@ -44,19 +44,19 @@ in {
         colorScheme = cfg.theme;
         lookAndFeel = cfg.theme;
         iconTheme = cfg.iconTheme;
-        wallpaper = desktop-wallpaper;
+        wallpaper = custom-wallpaper;
       };
 
-      kwin = {
-        effects = {
-          shakeCursor = false;
-        };
-      };
+      #kwin = {
+      #  effects = {
+      #    shakeCursor = false;
+      #  };
+      #};
 
       configFile = {
         kscreenlockerrc = {
           Greeter.WallpaperPlugin = "org.kde.image";
-          "Greeter/Wallpaper/org.kde.image/General".Image = desktop-wallpaper;
+          "Greeter/Wallpaper/org.kde.image/General".Image = custom-wallpaper;
         };
       };
     };
