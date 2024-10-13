@@ -37,7 +37,7 @@
     orca-slicer
 
     # Networking
-    ciscoPacketTracer8
+    # ciscoPacketTracer8
 
     # API testing
     postman
