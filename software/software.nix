@@ -32,6 +32,9 @@
     ffmpeg # Video editor
     gimp # Picture editor
 
+    # Apple AirPlay
+    uxplay
+
     # 3D Printing
     blender
     orca-slicer
