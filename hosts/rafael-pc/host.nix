@@ -24,7 +24,7 @@
 
   # NVME
   fileSystems."/mnt/nvme/games" = {
-    device = "/dev/disk/by-uuid/81493db0-be4a-4a63-ab4e-fdfdbad67b13";
+    device = "/dev/disk/by-uuid/309ea3f6-a12a-4d53-97e4-29a3976496b9";
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=games"];
   };
