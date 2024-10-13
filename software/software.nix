@@ -9,6 +9,7 @@
     ./gaming.nix
     ./vpn.nix
     ./virtualization/virtualization.nix
+    ./application/uxplay.nix
   ];
 
   # List packages installed in system profile. To search, run:
@@ -31,9 +32,6 @@
     mpv # Best media player on linux
     ffmpeg # Video editor
     gimp # Picture editor
-
-    # Apple AirPlay
-    uxplay
 
     # 3D Printing
     blender
