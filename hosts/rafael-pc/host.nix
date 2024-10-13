@@ -23,17 +23,22 @@
   boot.supportedFilesystems = ["ntfs"];
 
   # NVME
-  fileSystems."/mnt/fast/games" = {
-    device = "/dev/disk/by-uuid/676d07a3-96ea-4452-a932-16d764a448f6";
-    fsType = "btrfs";
-    options = ["compress=zstd" "subvol=games"];
-  };
+  #fileSystems."/mnt/fast/games" = {
+  #  device = "/dev/disk/by-uuid/676d07a3-96ea-4452-a932-16d764a448f6";
+  #  fsType = "btrfs";
+  #  options = ["compress=zstd" "subvol=games"];
+  #};
 
   # SSD
   fileSystems."/mnt/ssd/virtualization" = {
     device = "/dev/disk/by-uuid/2e8f5bb1-528f-4a80-9e0a-7769f1e98968";
     fsType = "btrfs";
     options = ["compress=zstd" "subvol=virtualization"];
+  };
+  fileSystems."/mnt/ssd/games" = {
+    device = "/dev/disk/by-uuid/2e8f5bb1-528f-4a80-9e0a-7769f1e98968";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=games"];
   };
 
   # HDD
