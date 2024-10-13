@@ -43,7 +43,7 @@
     postman
 
     # Chat clients
-    armcord # Discord but better
+    vesktop # Discord but better
     # Matrix Client: element-desktop
 
     # E-Mail clients
