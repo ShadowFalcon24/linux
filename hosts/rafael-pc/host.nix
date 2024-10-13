@@ -22,44 +22,34 @@
   # Enable NTFS support
   boot.supportedFilesystems = ["ntfs"];
 
+  # NVME
+  fileSystems."/mnt/nvme/games" = {
+    device = "/dev/disk/by-uuid/81493db0-be4a-4a63-ab4e-fdfdbad67b13";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=games"];
+  };
+
   # SSD
-  #fileSystems."/mnt/ssd/games" = {
-  #  device = "/dev/disk/by-uuid/6579cfb8-c7c1-4b10-aa1b-3fc9f64bc6e6";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=games"];
-  #};
-  #fileSystems."/mnt/ssd/virtualization" = {
-  #  device = "/dev/disk/by-uuid/6579cfb8-c7c1-4b10-aa1b-3fc9f64bc6e6";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=virtualization"];
-  #};
+  fileSystems."/mnt/ssd/virtualization" = {
+    device = "/dev/disk/by-uuid/2e8f5bb1-528f-4a80-9e0a-7769f1e98968";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=virtualization"];
+  };
 
   # HDD
-  #fileSystems."/mnt/hdd/development" = {
-  #  device = "/dev/disk/by-uuid/a485c8a5-fe59-42c2-9cb8-1a510a0940f4";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=development"];
-  #};
-  #fileSystems."/mnt/hdd/backups" = {
-  #  device = "/dev/disk/by-uuid/a485c8a5-fe59-42c2-9cb8-1a510a0940f4";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=backups"];
-  #};
-  #fileSystems."/mnt/hdd/school" = {
-  #  device = "/dev/disk/by-uuid/a485c8a5-fe59-42c2-9cb8-1a510a0940f4";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=school"];
-  #};
-  #fileSystems."/mnt/hdd/games" = {
-  #  device = "/dev/disk/by-uuid/a485c8a5-fe59-42c2-9cb8-1a510a0940f4";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=games"];
-  #};
-
-  # Extra HDD
-  #fileSystems."/mnt/extra/images" = {
-  #  device = "/dev/disk/by-uuid/a0acdf1d-5ef9-41d9-8e94-756dccd8e761";
-  #  fsType = "btrfs";
-  #  options = ["compress=zstd" "subvol=images"];
-  #};
+  fileSystems."/mnt/hdd/development" = {
+    device = "/dev/disk/by-uuid/9cfca145-d357-427b-b247-63df275332c5";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=development"];
+  };
+  fileSystems."/mnt/hdd/backups" = {
+    device = "/dev/disk/by-uuid/9cfca145-d357-427b-b247-63df275332c5";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=backups"];
+  };
+  fileSystems."/mnt/hdd/school" = {
+    device = "/dev/disk/by-uuid/9cfca145-d357-427b-b247-63df275332c5";
+    fsType = "btrfs";
+    options = ["compress=zstd" "subvol=school"];
+  };
 }
