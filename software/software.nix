@@ -36,6 +36,9 @@
     blender
     orca-slicer
 
+    # Networking
+    ciscoPacketTracer8
+
     # API testing
     postman
 
