@@ -65,6 +65,9 @@
     # Yubikey
     yubioath-flutter
 
+    # Disk tools
+    parted
+
     # This is required to be a linux user
     fastfetch
     btop
