@@ -69,6 +69,7 @@
     yubioath-flutter
 
     # Disk tools
+    mediawriter
     parted
 
     # This is required to be a linux user
