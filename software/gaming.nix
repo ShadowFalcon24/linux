@@ -21,6 +21,7 @@ in {
 
           # Wine
           protonup
+          wineWowPackages.stable
           bottles
 
           # Minecraft
