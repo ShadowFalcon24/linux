@@ -25,8 +25,9 @@
     background = "spacecraft_2.jpg";
   };
 
-  # Install nvidia drivers
+  # Install drivers
   graphics.driver.enableNvidia = false; # Disable for AMD
+  graphics.driver.enableAmd = true; # Disable for AMD
 
   # Software
   software.gaming.enable = true; # Enable steam und lutris

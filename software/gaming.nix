@@ -21,6 +21,7 @@ in {
 
           # Wine
           protonup
+          bottles
 
           # Minecraft
           temurin-bin
