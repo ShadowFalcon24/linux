@@ -7,7 +7,7 @@
   cfg = config.software.home.kde;
 
   custom-wallpaper = builtins.path {
-    path = ../wallpaper/${cfg.background};
+    path = ../../wallpaper/${cfg.background};
   };
 in {
   options.software.home.kde = {
@@ -47,11 +47,11 @@ in {
         wallpaper = custom-wallpaper;
       };
 
-      #kwin = {
-      #  effects = {
-      #    shakeCursor = false;
-      #  };
-      #};
+      kwin = {
+        effects = {
+          shakeCursor.enable = false;
+        };
+      };
 
       configFile = {
         kscreenlockerrc = {

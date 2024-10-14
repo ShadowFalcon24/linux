@@ -18,6 +18,9 @@
     # Appimages
     appimage-run
 
+    # Sunshine client
+    moonlight-qt
+
     # File sharing
     filezilla # WinSCP alternative
     localsend # AirDrop alternative

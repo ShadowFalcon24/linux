@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    # chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -15,10 +15,10 @@
       inputs.home-manager.follows = "home-manager";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nixvim = {
+    #   url = "github:nix-community/nixvim";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     alejandra = {
       url = "github:kamadorueda/alejandra/3.0.0";
@@ -29,7 +29,7 @@
   outputs = {
     self,
     nixpkgs,
-    chaotic,
+    # chaotic,
     home-manager,
     plasma-manager,
     alejandra,
@@ -45,7 +45,7 @@
             environment.systemPackages = [alejandra.defaultPackage."${system}"];
           }
           ./hosts/rafael-pc/configuration.nix
-          chaotic.nixosModules.default
+          # chaotic.nixosModules.default
           home-manager.nixosModules.default
         ];
       };

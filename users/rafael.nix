@@ -13,10 +13,6 @@ in {
   home.username = userName;
   home.homeDirectory = "/home/${userName}";
 
-  home.packages = with pkgs; [
-    moonlight-qt # Install moonlight client
-  ];
-
   software.home = {
     # Git module
     git = {
@@ -28,7 +24,7 @@ in {
     # Only enable this if we are using Hyprland
     hyprland = {
       enable = false;
-      background = "trees.jpg";
+      background = "spacecraft_2.jpg";
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
     };
@@ -36,7 +32,7 @@ in {
     # Only enable this if we are using KDE
     kde = {
       enable = true;
-      background = "trees.jpg";
+      background = "spacecraft_2.jpg";
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
     };

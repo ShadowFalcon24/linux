@@ -20,7 +20,10 @@
   # Select desktop
   desktop.kde.enable = true;
   desktop.hyprland.enable = false; # Disable hyprland
-  displayManager.sddm.enable = true;
+  displayManager.sddm = {
+    enable = true;
+    background = "spacecraft_2.jpg";
+  };
 
   # Install nvidia drivers
   graphics.driver.enableNvidia = false; # Disable for AMD
