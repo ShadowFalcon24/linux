@@ -19,6 +19,9 @@ in {
         environment.systemPackages = with pkgs; [
           mangohud # Performance Overlay
 
+          # Streaming
+          parsec-bin
+
           # Wine
           protonup
           wineWowPackages.stable
