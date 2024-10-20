@@ -44,6 +44,7 @@ in {
 
         environment.systemPackages = with pkgs; [
           kdePackages.kcalc # Calculator
+          kdePackages.kclock # Clock
           kdePackages.filelight
           vulkan-tools
         ];
