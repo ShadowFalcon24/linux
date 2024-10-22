@@ -86,6 +86,7 @@
       "ddkjiahejlhfcafbddmgiahcphecmpfh" # uBlock Origin Lite
       "nngceckbapebfimnlniiiahkandclblb" # Bitwarden PasswordManager
       "aghfnjkcakhmadgdomlmlhhaocbkloab" # Just Dark Theme
+      "eimadpbcbfnmbkopoojfekhnkhdbieeh" # Dark Reader
     ];
     extraOpts = {
       "SyncDisabled" = true;
