@@ -103,7 +103,7 @@ in {
     systemd.services.libvirtd = {
       # scripts use binaries from these packages
       # NOTE: All these hooks are run with root privileges... Be careful!
-      path = with pkgs; [libvirt procps pciutils killall utillinux doas];
+      path = with pkgs; [libvirt procps pciutils killall util-linux doas];
       preStart = ''
         mkdir -p /var/lib/libvirt/vbios
         ln -sf ${./../../hosts/${cfg.hostName}/files/gpu-vbios.rom} /var/lib/libvirt/vbios/patched-bios.rom
