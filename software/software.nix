@@ -72,6 +72,10 @@
     mediawriter
     parted
 
+    # Kubernetes
+    kubectl
+    kubernetes-helm
+
     # This is required to be a linux user
     fastfetch
     btop
