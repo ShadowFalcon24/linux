@@ -33,6 +33,8 @@
   software.gaming.enable = true; # Enable steam und lutris
   # software.gaming.sunshine.enable = true; # Gives sunshine permissions to capture your screen
   software.vpn.enable = true; # Enable mullvad and other tools
+  software.development.enable = true; # Enable development tools
+  software.application.uxplay.enable = true; # Enable uxplay
 
   # Please check if ("amd_iommu=on" or "intel_iommu=on") and "iommu=pt" is set
   # Please change the GPU ids in the virtualization module!

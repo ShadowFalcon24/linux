@@ -8,6 +8,7 @@
     ./sound.nix
     ./gaming.nix
     ./vpn.nix
+    ./development.nix
     ./virtualization/virtualization.nix
     ./application/uxplay.nix
   ];
@@ -22,29 +23,19 @@
     moonlight-qt
 
     # File sharing
-    filezilla # WinSCP alternative
     localsend # AirDrop alternative
 
     # Editors
     kate
     obsidian
-    arduino-ide
-    jetbrains.gateway
 
     # Media editors/players
     mpv # Best media player on linux
     ffmpeg # Video editor
     gimp # Picture editor
 
-    # 3D Printing
-    blender
-    orca-slicer
-
     # Networking
     # ciscoPacketTracer8
-
-    # API testing
-    postman
 
     # Chat clients
     vesktop # Discord but better
@@ -71,10 +62,6 @@
     # Disk tools
     mediawriter
     parted
-
-    # Kubernetes
-    kubectl
-    kubernetes-helm
 
     # This is required to be a linux user
     fastfetch
