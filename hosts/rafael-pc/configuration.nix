@@ -69,7 +69,10 @@
 
   # Firewall
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [12892];
+  networking.firewall.allowedTCPPorts = [
+    12892 # Atomic Cloud Controller
+    25565 # Minecraft
+  ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   networking.firewall.enable = true;
