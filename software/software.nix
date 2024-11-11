@@ -78,6 +78,8 @@
       "nngceckbapebfimnlniiiahkandclblb" # Bitwarden PasswordManager
       "aghfnjkcakhmadgdomlmlhhaocbkloab" # Just Dark Theme
       "eimadpbcbfnmbkopoojfekhnkhdbieeh" # Dark Reader
+      "gebbhagfogifgggkldgodflihgfeippi" # Return YouTube Dislike
+      "ifbmcpbgkhlpfcodhjhdbllhiaomkdej" # Office - Enable Copy and Paste
     ];
     extraOpts = {
       "SyncDisabled" = true;
