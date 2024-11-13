@@ -31,6 +31,9 @@ in {
       # 3D Printing
       blender
       orca-slicer
+
+      # Linux headers
+      linuxHeaders
     ];
   };
 }
