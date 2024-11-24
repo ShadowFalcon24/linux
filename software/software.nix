@@ -66,6 +66,15 @@
     # This is required to be a linux user
     fastfetch
     btop
+
+    # OBS
+    (pkgs.wrapOBS {
+      plugins = with pkgs.obs-studio-plugins; [
+        wlrobs
+        obs-backgroundremoval
+        obs-pipewire-audio-capture
+      ];
+    })
   ];
 
   # Change some chromium settings
