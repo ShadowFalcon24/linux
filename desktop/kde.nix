@@ -39,6 +39,9 @@ in {
         # Enable CUPS to print documents.
         services.printing.enable = true;
 
+        # Enable KDE Connect
+        programs.kdeconnect.enable = true;
+
         # Enable touchpad support (enabled default in most desktopManager).
         # services.xserver.libinput.enable = true;
 
