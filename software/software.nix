@@ -49,6 +49,7 @@
 
     # Webbrowser
     google-chrome
+    firefox
 
     # Libreoffice with spell checking for english and german
     libreoffice-qt
