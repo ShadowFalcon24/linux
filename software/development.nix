@@ -32,6 +32,9 @@ in {
       blender
       orca-slicer
 
+      # Raspberry PI
+      rpi-imager
+
       # Linux headers
       linuxHeaders
     ];
