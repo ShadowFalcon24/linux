@@ -32,6 +32,9 @@ in {
       terraform
       cf-terraforming
 
+      # Encryption
+      openssl
+
       # 3D Printing
       blender
       orca-slicer
