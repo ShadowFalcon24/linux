@@ -30,6 +30,7 @@ in {
 
       # Terraform
       terraform
+      cf-terraforming
 
       # 3D Printing
       blender
