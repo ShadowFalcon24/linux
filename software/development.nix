@@ -28,6 +28,9 @@ in {
       kubectl
       kubernetes-helm
 
+      # Terraform
+      terraform
+
       # 3D Printing
       blender
       orca-slicer
