@@ -72,8 +72,11 @@
   networking.firewall.allowedTCPPorts = [
     12892 # Atomic Cloud Controller
     25565 # Minecraft
+    53317 # LocalSend
   ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall.allowedUDPPorts = [
+    53317 # LocalSend
+  ];
   # Or disable the firewall altogether.
   networking.firewall.enable = true;
 }
