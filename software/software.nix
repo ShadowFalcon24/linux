@@ -38,7 +38,7 @@
     # ciscoPacketTracer8
 
     # Chat clients
-    discord-canary # Discord but better
+    vesktop # Discord but better
     # Matrix Client: element-desktop
 
     # E-Mail clients
