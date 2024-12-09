@@ -37,8 +37,9 @@
     # Networking
     # ciscoPacketTracer8
 
-    # Chat clients
+    # Chat/Voice clients
     vesktop # Discord but better
+    mumble
     # Matrix Client: element-desktop
 
     # E-Mail clients
