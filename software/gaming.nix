@@ -20,6 +20,7 @@ in {
           mangohud # Performance Overlay
 
           # Streaming
+          moonlight-qt
           parsec-bin
 
           # Wine

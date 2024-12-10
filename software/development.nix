@@ -24,24 +24,6 @@ in {
       # API testing
       postman
 
-      # Kubernetes
-      kubectl
-      kubernetes-helm
-
-      # Terraform
-      terraform
-      cf-terraforming
-
-      # Encryption
-      openssl
-
-      # 3D Printing
-      blender
-      orca-slicer
-
-      # Raspberry PI
-      rpi-imager
-
       # Linux headers
       linuxHeaders
     ];

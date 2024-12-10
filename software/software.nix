@@ -9,8 +9,10 @@
     ./gaming.nix
     ./vpn.nix
     ./development.nix
+    ./homelab.nix
     ./virtualization/virtualization.nix
     ./application/uxplay.nix
+    ./application/ollama.nix
   ];
 
   # List packages installed in system profile. To search, run:
@@ -18,9 +20,6 @@
   environment.systemPackages = with pkgs; [
     # Appimages
     appimage-run
-
-    # Sunshine client
-    moonlight-qt
 
     # File sharing
     localsend # AirDrop alternative
@@ -39,7 +38,6 @@
 
     # Chat/Voice clients
     vesktop # Discord but better
-    mumble
     # Matrix Client: element-desktop
 
     # E-Mail clients
