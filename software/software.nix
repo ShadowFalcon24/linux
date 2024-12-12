@@ -38,6 +38,7 @@
 
     # Chat/Voice clients
     vesktop # Discord but better
+    teamspeak_client
     # Matrix Client: element-desktop
 
     # E-Mail clients
