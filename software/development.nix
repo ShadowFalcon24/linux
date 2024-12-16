@@ -24,6 +24,9 @@ in {
       # API testing
       postman
 
+      # Minecraft
+      mcaselector
+
       # Linux headers
       linuxHeaders
     ];
