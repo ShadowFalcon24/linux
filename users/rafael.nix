@@ -24,7 +24,7 @@ in {
     # Only enable this if we are using Hyprland
     hyprland = {
       enable = false;
-      background = "spacecraft_2.jpg";
+      background = "winter_1.jpg";
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
     };
@@ -32,7 +32,7 @@ in {
     # Only enable this if we are using KDE
     kde = {
       enable = true;
-      background = "spacecraft_2.jpg";
+      background = "winter_1.jpg";
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
     };
