@@ -31,6 +31,7 @@ in {
           # Minecraft
           temurin-bin
           prismlauncher
+          modrinth-app
           packwiz
         ];
 
