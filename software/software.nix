@@ -52,7 +52,7 @@
     firefox
 
     # Libreoffice with spell checking for english and german
-    libreoffice-qt
+    libreoffice-qt6-fresh
     hunspell
     hunspellDicts.en_US
     hunspellDicts.de_DE
