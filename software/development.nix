@@ -17,6 +17,7 @@ in {
       # IDEs
       arduino-ide
       jetbrains.gateway
+      android-studio
 
       # File sharing
       filezilla # WinSCP alternative
