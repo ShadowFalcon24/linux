@@ -11,6 +11,11 @@ in {
   };
 
   config = lib.mkIf cfg.enable {
+    # Allow dotnet6 to be able to use godot mono / remove if https://github.com/NixOS/nixpkgs/issues/365975 is fixed
+    nixpkgs.config.permittedInsecurePackages = [
+      "dotnet-sdk-6.0.428"
+    ];
+
     # List packages installed in system profile. To search, run:
     # $ nix search vim
     environment.systemPackages = with pkgs; [
@@ -18,6 +23,9 @@ in {
       arduino-ide
       jetbrains.gateway
       android-studio
+
+      # Engines
+      godot_4-mono
 
       # File sharing
       filezilla # WinSCP alternative
