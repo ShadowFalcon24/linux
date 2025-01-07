@@ -27,6 +27,9 @@ in {
       # Engines
       godot_4-mono
 
+      # CI testing
+      act
+
       # File sharing
       filezilla # WinSCP alternative
 
