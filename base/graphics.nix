@@ -15,6 +15,7 @@ in {
     (lib.mkIf cfg.enableAmd {
       # Load amd driver for Xorg and Wayland
       services.xserver.videoDrivers = ["amdgpu"];
+      hardware.graphics.extraPackages = [pkgs.amf];
     })
     (lib.mkIf cfg.enableNvidia {
       # Load nvidia driver for Xorg and Wayland

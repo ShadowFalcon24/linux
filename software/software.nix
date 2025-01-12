@@ -30,7 +30,7 @@
 
     # Media editors/players
     mpv # Best media player on linux
-    ffmpeg # Video editor
+    ffmpeg-full # Video editor
     gimp # Picture editor
 
     # Networking
