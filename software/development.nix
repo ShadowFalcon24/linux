@@ -38,6 +38,7 @@ in {
 
       # Minecraft
       mcaselector
+      blockbench
 
       # Linux headers
       linuxHeaders
