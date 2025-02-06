@@ -20,9 +20,9 @@ in {
     # $ nix search vim
     environment.systemPackages = with pkgs; [
       # IDEs
-      arduino-ide
+      #arduino-ide
       jetbrains.gateway
-      android-studio
+      #android-studio
 
       # Engines
       godot_4-mono

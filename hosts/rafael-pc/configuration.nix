@@ -39,7 +39,7 @@
   # Applications
   # Ollama
   software.application.ollama = {
-    enable = false; # Enable ollama
+    enable = true; # Enable ollama
     gpuAccelerationType = "rocm"; # Set GPU acceleration type / for Nvidia use "cuda"
   };
   # Airplay

@@ -103,7 +103,7 @@
   programs.partition-manager.enable = true;
 
   # Install OpenRGB
-  services.hardware.openrgb.enable = true;
+  #services.hardware.openrgb.enable = true;
 
   # Enable pcscd service
   services.pcscd.enable = true;

@@ -20,7 +20,7 @@ in {
           mangohud # Performance Overlay
 
           # Streaming
-          moonlight-qt
+          #moonlight-qt
           parsec-bin
 
           # Wine
@@ -31,7 +31,7 @@ in {
           # Minecraft
           temurin-bin
           prismlauncher
-          modrinth-app
+          #modrinth-app
           packwiz
         ];
 
