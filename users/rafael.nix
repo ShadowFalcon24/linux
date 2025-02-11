@@ -5,6 +5,19 @@
   ...
 }: let
   userName = "rafael";
+
+  wallpapers = [
+    "other_1.jpg"
+    "other_2.jpg"
+    "other_3.jpg"
+    "spacecraft_1.jpg"
+    "spacecraft_2.jpg"
+    "world_1.jpg"
+    "world_2.jpg"
+    "world_3.jpg"
+  ];
+
+  selectedWallpaper = builtins.elemAt wallpapers 2;
 in {
   imports = [
     ../home/home.nix
@@ -24,7 +37,7 @@ in {
     # Only enable this if we are using Hyprland
     hyprland = {
       enable = false;
-      background = "winter_1.jpg";
+      background = selectedWallpaper;
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
     };
@@ -32,7 +45,7 @@ in {
     # Only enable this if we are using KDE
     kde = {
       enable = true;
-      background = "winter_1.jpg";
+      background = selectedWallpaper;
       theme = "Monochrome";
       iconTheme = "Papirus-Dark";
     };
