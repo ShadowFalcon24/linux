@@ -37,8 +37,8 @@
     # ciscoPacketTracer8
 
     # Chat/Voice clients
-    vesktop # Discord but better
-    teamspeak_client
+    legcord # Discord but better
+    teamspeak6-client
     # Matrix Client: element-desktop
 
     # E-Mail clients
