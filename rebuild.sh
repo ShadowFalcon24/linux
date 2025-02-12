@@ -13,6 +13,15 @@ target=$(<target.txt)
 # Run Alejandra quietly
 alejandra .
 
+# If the file exists, update its selected wallpaper index with a random number from 0 to 7.
+if [ -f users/rafael.nix ]; then
+    # Generate a random number between 0 and 7.
+    rand=$(( RANDOM % 8 ))
+    echo "Updating selectedWallpaper index to ${rand} in users/rafael.nix"
+    # Replace the digit after "selectedWallpaper = builtins.elemAt wallpapers " with the random number.
+    sed -i "s/\(selectedWallpaper = builtins\.elemAt wallpapers \)[0-9]\(;\)/\1${rand}\2/" users/rafael.nix
+fi
+
 # Show changes in *.nix files with zero context lines
 git diff -U0 *.nix
 

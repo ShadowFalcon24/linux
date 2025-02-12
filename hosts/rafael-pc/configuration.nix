@@ -22,7 +22,7 @@
   desktop.hyprland.enable = false; # Disable hyprland
   displayManager.sddm = {
     enable = true;
-    background = "winter_1.jpg";
+    background = "world_2.jpg";
   };
 
   # Install drivers
