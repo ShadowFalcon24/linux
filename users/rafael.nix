@@ -7,6 +7,11 @@
   userName = "rafael";
 
   wallpapers = [
+    "heli_1.jpg"
+    "heli_2.jpg"
+    "rocket_1.jpg"
+    "rocket_2.jpg"
+    "rocket_3.jpg"
     "other_1.jpg"
     "other_2.jpg"
     "other_3.jpg"
@@ -17,7 +22,7 @@
     "world_3.jpg"
   ];
 
-  selectedWallpaper = builtins.elemAt wallpapers 2;
+  selectedWallpaper = builtins.elemAt wallpapers 6;
 in {
   imports = [
     ../home/home.nix
