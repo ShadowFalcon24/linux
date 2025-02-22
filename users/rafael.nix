@@ -22,7 +22,7 @@
     "world_3.jpg"
   ];
 
-  selectedWallpaper = builtins.elemAt wallpapers 6;
+  selectedWallpaper = builtins.elemAt wallpapers 10;
 in {
   imports = [
     ../home/home.nix
