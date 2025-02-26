@@ -25,7 +25,7 @@
     localsend # AirDrop alternative
 
     # Editors
-    kate
+    kdePackages.kate
     obsidian
 
     # Media editors/players
