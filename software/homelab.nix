@@ -26,14 +26,8 @@ in {
       # blender
       orca-slicer
 
-      # Networking
-      wireshark
-
       # Raspberry PI
       rpi-imager
     ];
-
-    # Networking
-    programs.wireshark.enable = true;
   };
 }
