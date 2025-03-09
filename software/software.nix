@@ -99,6 +99,9 @@
     };
   };
 
+  # Install Ladybird
+  programs.ladybird.enable = true;
+
   # Install partition manager
   programs.partition-manager.enable = true;
 
