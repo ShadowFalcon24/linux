@@ -44,6 +44,8 @@
   };
   # Airplay
   software.application.uxplay.enable = true; # Enable uxplay
+  # OBS
+  software.application.obs.enable = true; # Enable obs
 
   # Please check if ("amd_iommu=on" or "intel_iommu=on") and "iommu=pt" is set
   # Please change the GPU ids in the virtualization module!
