@@ -26,6 +26,9 @@ in {
       # blender
       orca-slicer
 
+      # Networking
+      wireshark
+
       # Raspberry PI
       rpi-imager
     ];
