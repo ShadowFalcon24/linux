@@ -27,6 +27,7 @@ in {
       shell = pkgs.nushell;
       packages = with pkgs; []; # User packages
     };
+    environment.shells = [pkgs.nushell];
 
     home-manager = {
       extraSpecialArgs = {inherit inputs;};
