@@ -23,7 +23,7 @@ in {
     users.users."${cfg.userName}" = {
       isNormalUser = true;
       description = cfg.userDescription;
-      extraGroups = ["networkmanager" "wheel" "libvirtd" "docker" "wireshark" "dialout"];
+      extraGroups = ["networkmanager" "wheel" "libvirtd" "docker" "dialout" "wireshark"];
       shell = pkgs.nushell;
       packages = with pkgs; []; # User packages
     };
