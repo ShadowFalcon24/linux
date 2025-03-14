@@ -10,16 +10,21 @@ operation=${1:-switch}
 # Read current target configuration
 target=$(<target.txt)
 
+# Pull latest changes from upstream
+echo "Pulling latest changes from upstream..."
+git pull --autostash
+
 # Run Alejandra quietly
+echo "Formatting configuration..."
 alejandra .
 
-# If the file exists, update its selected wallpaper index with a random number from 0 to 13.
+# If the file exists, update its selected wallpaper index with a random number from 0 to 10.
 if [ -f users/rafael.nix ]; then
-    # Generate a random number between 0 and 13.
-    rand=$(( RANDOM % 13 ))
+    # Generate a random number between 0 and 10.
+    rand=$(( RANDOM % 10 ))
     echo "Updating selectedWallpaper index to ${rand} in users/rafael.nix"
     # Replace the digit after "selectedWallpaper = builtins.elemAt wallpapers " with the random number.
-    sed -i "s/\(selectedWallpaper = builtins\.elemAt wallpapers \)[0-9]\(;\)/\1${rand}\2/" users/rafael.nix
+    sed -i "s/\(selectedWallpaper = builtins\.elemAt wallpapers \)[0-9]\{1,\}\(;\)/\1${rand}\2/" users/rafael.nix
 fi
 
 # Show changes in *.nix files with zero context lines

@@ -5,6 +5,7 @@
   ...
 }: {
   imports = [
+    ./update.nix
     ./main-user.nix
     ./extra-locale.nix
     ./boot.nix

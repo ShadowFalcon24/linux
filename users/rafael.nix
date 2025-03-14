@@ -8,13 +8,10 @@
 
   wallpapers = [
     "heli_1.jpg"
-    "heli_2.jpg"
     "rocket_1.jpg"
     "rocket_2.jpg"
     "rocket_3.jpg"
     "other_1.jpg"
-    "other_2.jpg"
-    "other_3.jpg"
     "spacecraft_1.jpg"
     "spacecraft_2.jpg"
     "world_1.jpg"
@@ -22,7 +19,7 @@
     "world_3.jpg"
   ];
 
-  selectedWallpaper = builtins.elemAt wallpapers 10;
+  selectedWallpaper = builtins.elemAt wallpapers 4;
 in {
   imports = [
     ../home/home.nix

@@ -81,7 +81,7 @@
   # Firewall
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [
-    12892 # Atomic Cloud Controller
+    8080 # Atomic Cloud Controller
     25565 # Minecraft
     53317 # LocalSend
   ];

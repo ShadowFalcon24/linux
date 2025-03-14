@@ -40,7 +40,7 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: "Create Pull Request🤖"
+      - name: "Create Pull Request 🤖"
         if: steps.check_changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
