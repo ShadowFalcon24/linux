@@ -29,5 +29,8 @@ in {
       # Raspberry PI
       rpi-imager
     ];
+
+    # Install wireshark
+    programs.wireshark.enable = true;
   };
 }
