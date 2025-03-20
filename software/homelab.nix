@@ -28,6 +28,9 @@ in {
 
       # Raspberry PI
       rpi-imager
+
+      # Networking
+      wireshark
     ];
 
     # Install wireshark
