@@ -68,7 +68,7 @@
     # This is required to be a linux user
     fastfetch
     btop
-    nvtop
+    nvtopPackages.full
   ];
 
   # Change some chromium settings
