@@ -44,6 +44,7 @@
 
     # E-Mail clients
     thunderbird
+    protonmail-desktop
 
     # Music
     spotify
