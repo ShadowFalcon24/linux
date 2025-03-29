@@ -36,6 +36,12 @@ in {
       # API testing
       postman
 
+      # Redis
+      redisinsight
+
+      # MongoDB
+      mongodb-compass
+
       # Minecraft
       mcaselector
       blockbench
