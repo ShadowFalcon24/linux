@@ -33,6 +33,7 @@
     mpv # Best media player on linux
     ffmpeg-full # Video editor
     gimp # Picture editor
+    scrcpy
 
     # Networking
     # ciscoPacketTracer8
