@@ -26,7 +26,7 @@ in {
           # Wine
           protonup
           wineWowPackages.stable
-          bottles
+          heroic
 
           # Minecraft
           temurin-bin
