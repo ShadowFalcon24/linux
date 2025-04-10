@@ -27,6 +27,7 @@ in {
           protonup
           wineWowPackages.stable
           heroic
+          r2modman
 
           # Minecraft
           temurin-bin
