@@ -46,6 +46,9 @@ in {
       mcaselector
       blockbench
 
+      # Reverse Engineering
+      ghidra-bin
+
       # Linux headers
       linuxHeaders
     ];
