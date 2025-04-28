@@ -27,13 +27,13 @@
 
     # Editors
     kdePackages.kate
-    obsidian
+    #obsidian
 
     # Media editors/players
     mpv # Best media player on linux
-    ffmpeg-full # Video editor
+    #ffmpeg-full # Video editor
     gimp # Picture editor
-    scrcpy
+    #scrcpy
 
     # Networking
     # ciscoPacketTracer8
@@ -44,7 +44,7 @@
     # Matrix Client: element-desktop
 
     # E-Mail clients
-    thunderbird
+    # thunderbird
     protonmail-desktop
 
     # Music
@@ -52,20 +52,20 @@
 
     # Webbrowser
     google-chrome
-    firefox
+    #firefox
 
     # Libreoffice with spell checking for english and german
-    libreoffice-qt6-fresh
-    hunspell
-    hunspellDicts.en_US
-    hunspellDicts.de_DE
+    #libreoffice-qt6-fresh
+    #hunspell
+    #hunspellDicts.en_US
+    #hunspellDicts.de_DE
 
     # Yubikey
     yubioath-flutter
 
     # Disk tools
-    mediawriter
-    parted
+    #mediawriter
+    #parted
 
     # This is required to be a linux user
     fastfetch
@@ -95,7 +95,7 @@
   };
 
   # Install Ladybird
-  programs.ladybird.enable = true;
+  programs.ladybird.enable = false;
 
   # Install partition manager
   programs.partition-manager.enable = true;

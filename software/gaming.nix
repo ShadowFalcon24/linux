@@ -34,7 +34,7 @@ in {
           prismlauncher
           labymod-launcher
           #modrinth-app
-          packwiz
+          #packwiz
         ];
 
         # Install steam and other fancy things

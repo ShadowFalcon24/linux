@@ -28,26 +28,26 @@ in {
       godot_4-mono
 
       # CI testing
-      act
+      #act
 
       # File sharing
       filezilla # WinSCP alternative
 
       # API testing
-      postman
+      #postman
 
       # Redis
-      redisinsight
+      #redisinsight
 
       # MongoDB
-      mongodb-compass
+      #mongodb-compass
 
       # Minecraft
-      mcaselector
+      #mcaselector
       blockbench
 
       # Reverse Engineering
-      ghidra-bin
+      #ghidra-bin
 
       # Linux headers
       linuxHeaders

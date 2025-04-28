@@ -32,14 +32,14 @@
   # Software
   software.gaming.enable = true; # Enable steam und lutris
   # software.gaming.sunshine.enable = true; # Gives sunshine permissions to capture your screen
-  software.vpn.enable = true; # Enable mullvad and other tools
+  software.vpn.enable = false; # Enable mullvad and other tools
   software.development.enable = true; # Enable development tools
   software.homelab.enable = true; # Enable homelab tools
 
   # Applications
   # Ollama
   software.application.ollama = {
-    enable = true; # Enable ollama
+    enable = false; # Enable ollama
     gpuAccelerationType = "rocm"; # Set GPU acceleration type / for Nvidia use "cuda"
   };
   # Airplay
@@ -49,7 +49,7 @@
 
   # Please check if ("amd_iommu=on" or "intel_iommu=on") and "iommu=pt" is set
   # Please change the GPU ids in the virtualization module!
-  software.virtualization.enable = true; # Enable qemu and virt-manager
+  software.virtualization.enable = false; # Enable qemu and virt-manager
   software.virtualization.cpuType = "amd";
   software.virtualization.hostName = "rafael-pc";
 

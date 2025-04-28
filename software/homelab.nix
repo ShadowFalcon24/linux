@@ -19,21 +19,21 @@ in {
       kubernetes-helm
 
       # Terraform
-      terraform
-      cf-terraforming
+      #terraform
+      #cf-terraforming
 
       # 3D Printing
       # blender
-      orca-slicer
+      #orca-slicer
 
       # Raspberry PI
-      rpi-imager
+      #rpi-imager
 
       # Networking
-      wireshark
+      #wireshark
     ];
 
     # Install wireshark
-    programs.wireshark.enable = true;
+    programs.wireshark.enable = false;
   };
 }
