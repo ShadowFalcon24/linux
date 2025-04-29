@@ -25,6 +25,10 @@ in {
       #android-studio
 
       # Engines
+      ## C#
+      dotnetCorePackages.dotnet_9.sdk
+
+      ## Godot
       godot_4-mono
 
       # CI testing
