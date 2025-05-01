@@ -29,13 +29,13 @@ in {
       dotnetCorePackages.dotnet_9.sdk
 
       ## Godot
-      godot_4-mono
+      #godot_4-mono
 
       # CI testing
       #act
 
       # File sharing
-      filezilla # WinSCP alternative
+      #filezilla # WinSCP alternative
 
       # API testing
       #postman
@@ -48,7 +48,7 @@ in {
 
       # Minecraft
       #mcaselector
-      blockbench
+      #blockbench
 
       # Reverse Engineering
       #ghidra-bin

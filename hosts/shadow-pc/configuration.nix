@@ -27,7 +27,7 @@
 
   # Install drivers
   graphics.driver.enableNvidia = false; # Disable for AMD
-  graphics.driver.enableAmd = true; # Disable for AMD
+  graphics.driver.enableAmd = true; # Enable for AMD
 
   # Software
   software.gaming.enable = true; # Enable steam und lutris

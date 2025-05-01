@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: let
-  userName = "shadow;
+  userName = "shadow";
 
   wallpapers = [
     "heli_1.jpg"

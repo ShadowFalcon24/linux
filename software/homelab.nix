@@ -15,8 +15,8 @@ in {
     # $ nix search vim
     environment.systemPackages = with pkgs; [
       # Kubernetes
-      kubectl
-      kubernetes-helm
+      #kubectl
+      #kubernetes-helm
 
       # Terraform
       #terraform
