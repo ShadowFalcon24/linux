@@ -34,7 +34,7 @@
   # software.gaming.sunshine.enable = true; # Gives sunshine permissions to capture your screen
   software.vpn.enable = false; # Enable mullvad and other tools
   software.development.enable = true; # Enable development tools
-  software.homelab.enable = true; # Enable homelab tools
+  software.homelab.enable = false; # Enable homelab tools
 
   # Applications
   # Ollama
@@ -43,7 +43,7 @@
     gpuAccelerationType = "rocm"; # Set GPU acceleration type / for Nvidia use "cuda"
   };
   # Airplay
-  software.application.uxplay.enable = true; # Enable uxplay
+  software.application.uxplay.enable = false; # Enable uxplay
   # OBS
   software.application.obs.enable = true; # Enable obs
 
@@ -51,14 +51,14 @@
   # Please change the GPU ids in the virtualization module!
   software.virtualization.enable = false; # Enable qemu and virt-manager
   software.virtualization.cpuType = "amd";
-  software.virtualization.hostName = "rafael-pc";
+  software.virtualization.hostName = "shadow-pc";
 
   # Name of the VM that should use GPU-Passthrough
   software.virtualization.guestName = "win10-passthrough";
 
   # Set username
-  main-user.userName = "rafael";
-  main-user.userDescription = "Rafael";
+  main-user.userName = "shadow";
+  main-user.userDescription = "Shadow";
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -80,15 +80,15 @@
 
   # Firewall
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [
-    8080 # Atomic Cloud Controller
-    25565 # Minecraft
-    8469 # Dyson Sphere Program
-    53317 # LocalSend
-  ];
-  networking.firewall.allowedUDPPorts = [
-    53317 # LocalSend
-  ];
+  #networking.firewall.allowedTCPPorts = [
+  #  8080 # Atomic Cloud Controller
+  #  25565 # Minecraft
+  #  8469 # Dyson Sphere Program
+  #  53317 # LocalSend
+  #];
+  #networking.firewall.allowedUDPPorts = [
+  #  53317 # LocalSend
+  #];
   # Or disable the firewall altogether.
-  networking.firewall.enable = true;
+  #networking.firewall.enable = false;
 }

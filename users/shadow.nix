@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: let
-  userName = "rafael";
+  userName = "shadow;
 
   wallpapers = [
     "heli_1.jpg"
@@ -32,8 +32,8 @@ in {
     # Git module
     git = {
       enable = true;
-      userName = "HttpRafa";
-      userEmail = "60099368+HttpRafa@users.noreply.github.com";
+      userName = "ShadowFalcon24";
+      userEmail = "120450863+ShadowFalcon24@users.noreply.github.com";
     };
     # Hyprland module
     # Only enable this if we are using Hyprland
