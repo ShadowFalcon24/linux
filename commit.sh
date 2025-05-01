@@ -19,12 +19,12 @@ echo "Formatting configuration..."
 alejandra .
 
 # If the file exists, update its selected wallpaper index with a random number from 0 to 10.
-if [ -f users/rafael.nix ]; then
+if [ -f users/shadow.nix ]; then
     # Generate a random number between 0 and 10.
     rand=$(( RANDOM % 10 ))
-    echo "Updating selectedWallpaper index to ${rand} in users/rafael.nix"
+    echo "Updating selectedWallpaper index to ${rand} in users/shadow.nix"
     # Replace the digit after "selectedWallpaper = builtins.elemAt wallpapers " with the random number.
-    sed -i "s/\(selectedWallpaper = builtins\.elemAt wallpapers \)[0-9]\{1,\}\(;\)/\1${rand}\2/" users/rafael.nix
+    sed -i "s/\(selectedWallpaper = builtins\.elemAt wallpapers \)[0-9]\{1,\}\(;\)/\1${rand}\2/" users/shadow.nix
 fi
 
 # Show changes in *.nix files with zero context lines

@@ -38,13 +38,13 @@
     system = "x86_64-linux";
   in {
     nixosConfigurations = {
-      rafael-pc = nixpkgs.lib.nixosSystem {
+      shadow-pc = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
           {
             environment.systemPackages = [alejandra.defaultPackage."${system}"];
           }
-          ./hosts/rafael-pc/configuration.nix
+          ./hosts/shadow-pc/configuration.nix
           # chaotic.nixosModules.default
           home-manager.nixosModules.default
         ];
