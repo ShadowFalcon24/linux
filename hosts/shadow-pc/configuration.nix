@@ -22,7 +22,7 @@
   desktop.hyprland.enable = false; # Disable hyprland
   displayManager.sddm = {
     enable = true;
-    background = "Cyberpunk-1.png";
+    background = "One-Piece-2.jpg";
   };
 
   # Install drivers
