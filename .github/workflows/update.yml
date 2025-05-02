@@ -19,8 +19,8 @@ jobs:
 
       - name: "Configure Git Identity 🤖"
         run: |
-          git config --global user.email "203101176+HttpBot@users.noreply.github.com"
-          git config --global user.name "HttpBot"
+          git config --global user.email "210045129+ShadowBoti@users.noreply.github.com"
+          git config --global user.name "ShadowBoti"
 
       - name: "Set Branch Name 🌿"
         id: branch
