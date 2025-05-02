@@ -85,6 +85,7 @@
       "eimadpbcbfnmbkopoojfekhnkhdbieeh" # Dark Reader
       "gebbhagfogifgggkldgodflihgfeippi" # Return YouTube Dislike
       "ifbmcpbgkhlpfcodhjhdbllhiaomkdej" # Office - Enable Copy and Paste
+      "fphegifdehlodcepfkgofelcenelpedj" # 7TV Nightly Extension for Twitch
     ];
     extraOpts = {
       "SyncDisabled" = true;
