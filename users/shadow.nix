@@ -20,7 +20,7 @@
     "SoT-2.jpg"
   ];
 
-  selectedWallpaper = builtins.elemAt wallpapers 4;
+  selectedWallpaper = builtins.elemAt wallpapers 8;
 in {
   imports = [
     ../home/home.nix
