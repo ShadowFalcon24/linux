@@ -21,8 +21,7 @@ in {
     environment.systemPackages = with pkgs; [
       # IDEs
       #arduino-ide
-      #jetbrains.gateway
-      jetbrains.idea-ultimate
+      jetbrains.gateway
       #android-studio
 
       # Engines
