@@ -22,7 +22,7 @@ in {
       # IDEs
       #arduino-ide
       #jetbrains.gateway
-      jetbrains.idea-ultimate
+      #jetbrains.idea-ultimate
       #android-studio
 
       # Engines
