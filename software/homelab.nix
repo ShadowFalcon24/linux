@@ -23,7 +23,7 @@ in {
       #cf-terraforming
 
       # 3D Printing
-      # blender
+      #blender
       #orca-slicer
 
       # Raspberry PI
