@@ -22,8 +22,12 @@ in {
       # IDEs
       #arduino-ide
       #jetbrains.gateway
-      #jetbrains.idea-ultimate
+      jetbrains.idea-ultimate
       #android-studio
+
+      # Java & build
+      temurin-bin # Latest Temurin JDK
+      gradle # JVM build system
 
       # Engines
       ## C#
