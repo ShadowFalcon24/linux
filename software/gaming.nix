@@ -33,7 +33,7 @@ in {
           # Minecraft
           temurin-bin
           prismlauncher
-          labymod-launcher
+          #labymod-launcher
           #modrinth-app
           #packwiz
         ];
