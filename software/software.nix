@@ -41,12 +41,12 @@
 
     # Chat/Voice clients
     vesktop # Discord but better
-    teamspeak6-client
+    #teamspeak6-client
     # Matrix Client: element-desktop
 
     # E-Mail clients
     # thunderbird
-    protonmail-desktop
+    #protonmail-desktop
 
     # Music
     spotify
@@ -62,7 +62,7 @@
     #hunspellDicts.de_DE
 
     # Yubikey
-    yubioath-flutter
+    #yubioath-flutter
 
     # Disk tools
     #mediawriter

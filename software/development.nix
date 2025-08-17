@@ -25,6 +25,9 @@ in {
       #jetbrains.idea-ultimate
       #android-studio
 
+      #3D Editing
+      blender
+
       # Java & build
       temurin-bin # Latest Temurin JDK
       gradle # JVM build system
