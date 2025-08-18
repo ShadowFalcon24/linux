@@ -24,6 +24,7 @@
 
     # File sharing
     localsend # AirDrop alternative
+    syncthing # File synchronisation
 
     # Editors
     kdePackages.kate
