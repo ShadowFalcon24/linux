@@ -7,20 +7,17 @@
   userName = "shadow";
 
   wallpapers = [
-    "Cyberpunk-1.png"
-    "Cyberpunk-2.jpg"
-    "Landscape-1.jpg"
-    "Landscape-2.jpg"
-    "Landscape-3.jpg"
     "One-Piece-1.jpg"
     "One-Piece-2.jpg"
     "One-Piece-3.png"
     "One-Piece-4.jpg"
-    "SoT-1.jpg"
-    "SoT-2.jpg"
+    "Space-1.jpg"
+    "Space-2.jpg"
+    "Space-3.jpg"
+    "Space-4.jpg"
   ];
 
-  selectedWallpaper = builtins.elemAt wallpapers 5;
+  selectedWallpaper = builtins.elemAt wallpapers 1;
 in {
   imports = [
     ../home/home.nix
