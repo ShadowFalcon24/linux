@@ -17,7 +17,7 @@
     "Space-4.jpg"
   ];
 
-  selectedWallpaper = builtins.elemAt wallpapers 4;
+  selectedWallpaper = builtins.elemAt wallpapers 5;
 in {
   imports = [
     ../home/home.nix
