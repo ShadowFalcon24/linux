@@ -22,13 +22,13 @@ in {
           # Streaming
           #moonlight-qt
           parsec-bin
-          gfn-electron
+          #gfn-electron
 
           # Wine
           protonup
           wineWowPackages.stable
           heroic
-          r2modman
+          #r2modman
 
           # Minecraft
           temurin-bin

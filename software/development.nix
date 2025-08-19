@@ -56,7 +56,7 @@ in {
 
       # Minecraft
       #mcaselector
-      blockbench
+      #blockbench
 
       # Reverse Engineering
       #ghidra-bin
