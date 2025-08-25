@@ -32,7 +32,7 @@
 
     # Media editors/players
     mpv # Best media player on linux
-    #davinci-resolve
+    davinci-resolve
     #ffmpeg-full # Video editor
     gimp # Picture editor
     #scrcpy

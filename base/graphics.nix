@@ -7,50 +7,72 @@
   cfg = config.graphics.driver;
 in {
   options.graphics.driver = {
-    enableNvidia = lib.mkEnableOption "enable nvidia drivers";
-    enableAmd = lib.mkEnableOption "enable amd drivers";
+    enableNvidia = lib.mkEnableOption "Enable NVIDIA drivers and related settings";
+    enableAmd = lib.mkEnableOption "Enable AMD drivers with Vulkan and OpenCL support";
   };
 
   config = lib.mkMerge [
+    #### AMD CONFIG ####
     (lib.mkIf cfg.enableAmd {
-      # Load amd driver for Xorg and Wayland
+      # Xorg/Wayland Treiber für AMD
       services.xserver.videoDrivers = ["amdgpu"];
-      hardware.graphics.extraPackages = [pkgs.amf];
+
+      # Aktiviert Mesa (OpenGL/Vulkan), 32-bit Support für Proton/Wine
+      hardware.graphics = {
+        enable = true;
+        enable32Bit = true;
+        extraPackages = with pkgs; [
+          amf # Advanced Media Framework (Video-Encoding)
+          rocmPackages.clr.icd # OpenCL ICD (ROCm)
+          amdvlk # Optionaler Vulkan-Treiber (neben RADV)
+        ];
+        extraPackages32 = with pkgs; [
+          driversi686Linux.amdvlk
+        ];
+      };
+
+      # HIP-Symlink für Software wie Blender, die /opt/rocm erwartet
+      systemd.tmpfiles.rules = [
+        "L+ /opt/rocm/hip - - - - ${pkgs.rocmPackages.clr}"
+      ];
+
+      # Diagnose-Tools für AMD
+      environment.systemPackages = with pkgs; [
+        clinfo # Test für OpenCL
+        vulkan-tools # Test für Vulkan
+        mesa-demos # OpenGL Test
+      ];
+
+      # Firmware für amdgpu (wichtig für RX 7000 / 9000)
+      hardware.enableRedistributableFirmware = true;
     })
+
+    #### NVIDIA CONFIG ####
     (lib.mkIf cfg.enableNvidia {
-      # Load nvidia driver for Xorg and Wayland
       services.xserver.videoDrivers = ["nvidia"];
 
       hardware.nvidia = {
-        # Modesetting is required.
         modesetting.enable = true;
 
-        # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
-        # Enable this if you have graphical corruption issues or application crashes after waking
-        # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead
-        # of just the bare essentials.
         powerManagement.enable = false;
-
-        # Fine-grained power management. Turns off GPU when not in use.
-        # Experimental and only works on modern Nvidia GPUs (Turing or newer).
         powerManagement.finegrained = false;
 
-        # Use the NVidia open source kernel module (not to be confused with the
-        # independent third-party "nouveau" open source driver).
-        # Support is limited to the Turing and later architectures. Full list of
-        # supported GPUs is at:
-        # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus
-        # Only available from driver 515.43.04+
-        # Currently alpha-quality/buggy, so false is currently the recommended setting.
-        open = true;
-
-        # Enable the Nvidia settings menu,
-        # accessible via `nvidia-settings`.
+        open = true; # NVIDIA Open Kernel Module (nur für neuere GPUs)
         nvidiaSettings = true;
 
-        # Optionally, you may need to select the appropriate driver version for your specific GPU.
+        # Beta-Treiber für neueste Features
         package = config.boot.kernelPackages.nvidiaPackages.beta;
       };
+
+      # Tools für NVIDIA
+      environment.systemPackages = with pkgs; [
+        nvidia-settings
+      ];
+    })
+
+    #### MULTI-GPU-FALL ####
+    (lib.mkIf (cfg.enableAmd && cfg.enableNvidia) {
+      warnings = ["Beide GPUs aktiviert. Prüfe PRIME oder render offload, um Konflikte zu vermeiden."];
     })
   ];
 }
