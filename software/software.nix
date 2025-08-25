@@ -36,6 +36,7 @@
     #ffmpeg-full # Video editor
     gimp # Picture editor
     #scrcpy
+    kdenlive
 
     # Networking
     # ciscoPacketTracer8
