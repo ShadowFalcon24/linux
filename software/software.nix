@@ -70,6 +70,9 @@
     #mediawriter
     #parted
 
+    #Secure Boot key manager
+    sbctl
+
     # This is required to be a linux user
     fastfetch
     btop
