@@ -13,6 +13,7 @@
   # chaotic.scx.scheduler = "scx_rusty";
 
   # Bootloader.
+
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub = {
     enable = true;
@@ -20,4 +21,10 @@
     efiSupport = true;
     useOSProber = true;
   };
+
+  #boot.loader.systemd-boot.enable = lib.mkForce false;
+  #boot.lanzaboote = {
+  #  enable = true;
+  #  pkiBundle = "/var/lib/sbctl";
+  #};
 }
